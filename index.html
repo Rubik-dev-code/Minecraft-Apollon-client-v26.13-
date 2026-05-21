@@ -9,8 +9,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 40px 20px;
-            /* Pulls the image you uploaded directly from your repo root */
-            background-image: url('background.jpg'); 
+            /* Direct link to your R+ fire background image */
+            background-image: url('https://prodia.xyz'); 
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -21,52 +21,45 @@
             justify-content: center;
         }
         .container {
-            max-width: 650px;
+            max-width: 600px;
             width: 100%;
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.95); /* Semi-transparent box */
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.4);
-            text-align: left; /* Changes text back to standard readable alignment */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+            text-align: center;
         }
         h1 {
-            font-size: 26px;
-            text-align: center;
+            font-size: 28px;
             margin-top: 0;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             color: #111;
         }
-        .intro-text {
-            font-size: 16px;
-            text-align: center;
-            color: #444;
-            margin-bottom: 25px;
-            font-weight: bold;
-        }
-        .link-section {
-            background-color: #f1f1f1;
+        .message-text {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            background: #fdfdfd;
             padding: 15px;
-            border-left: 5px solid #d32f2f;
-            margin-bottom: 20px;
-            border-radius: 4px;
-            word-wrap: break-word; /* Prevents the long url from breaking layouts */
+            border-radius: 8px;
+            border: 1px solid #ddd;
         }
-        .link-title {
-            font-weight: bold;
-            font-size: 16px;
-            color: #d32f2f;
-            margin-bottom: 5px;
-        }
-        .url-text {
+        .url-box {
             display: block;
+            background: #f0f0f0;
+            padding: 12px;
+            margin: 15px 0;
+            border-radius: 6px;
             font-family: monospace;
-            background: #e0e0e0;
-            padding: 8px;
-            border-radius: 4px;
+            font-size: 13px;
             color: #0051b3;
             text-decoration: underline;
-            font-size: 13px;
-            margin-top: 5px;
+            word-break: break-all;
+            border: 1px solid #ccc;
+        }
+        .url-box:hover {
+            background: #e6e6e6;
         }
     </style>
 </head>
@@ -74,26 +67,20 @@
 
     <div class="container">
         <h1>Welcome</h1>
-        <p class="intro-text">Here are your requested Minecraft Apollon Client direct links:</p>
         
-        <!-- Link One Block -->
-        <div class="link-section">
-            <div class="link-title">Apollon Client 64-Bit Link:</div>
+        <div class="message-text">
             welcome link one 
-            <a class="url-text" href="https://mediafire.com" target="_blank">
-                https://mediafire.com
+            <!-- 64-Bit Clean Link -->
+            <a class="url-box" href="https://www.mediafire.com/file/xwro1zt5k7ncrt3/BM-MCPE_ApollonClient_1.26.13_64-Bit.apk/file" target="_blank">
+                https://www.mediafire.com/file/xwro1zt5k7ncrt3/BM-MCPE_ApollonClient_1.26.13_64-Bit.apk/file
             </a>
-            <strong>64bit</strong>
-        </div>
-
-        <!-- Link Two Block -->
-        <div class="link-section" style="border-left-color: #e65100;">
-            <div class="link-title" style="color: #e65100;">Apollon Client 32-Bit Link:</div>
-            and 
-            <a class="url-text" href="https://mediafire.com" target="_blank" style="color: #bf360c;">
-                https://mediafire.com
+            64bit and 
+            
+            <!-- 32-Bit Clean Link -->
+            <a class="url-box" href="https://www.mediafire.com/file/w544ew3kzf9a27l/BM-MCPE_ApollonClient_1.26.13_32-Bit.apk/file" target="_blank">
+                https://www.mediafire.com/file/w544ew3kzf9a27l/BM-MCPE_ApollonClient_1.26.13_32-Bit.apk/file
             </a>
-            <strong>32 bit</strong>
+            32 bit
         </div>
     </div>
 
