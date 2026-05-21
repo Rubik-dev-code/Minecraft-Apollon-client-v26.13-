@@ -9,8 +9,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 40px 20px;
-            /* Sets your image as the background */
-            background-image: url('https://prodia.xyz'); 
+            /* Pulls the image you uploaded directly from your repo root */
+            background-image: url('background.jpg'); 
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -21,47 +21,52 @@
             justify-content: center;
         }
         .container {
-            max-width: 500px;
+            max-width: 650px;
             width: 100%;
-            background: rgba(255, 255, 255, 0.95); /* Slight transparency so background shows through edges */
+            background: rgba(255, 255, 255, 0.95);
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-            text-align: center;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+            text-align: left; /* Changes text back to standard readable alignment */
         }
         h1 {
             font-size: 26px;
+            text-align: center;
             margin-top: 0;
-            margin-bottom: 20px;
-            color: #222;
+            margin-bottom: 10px;
+            color: #111;
         }
-        p {
+        .intro-text {
             font-size: 16px;
-            color: #555;
+            text-align: center;
+            color: #444;
             margin-bottom: 25px;
-        }
-        .btn {
-            display: block;
-            margin: 15px auto;
-            padding: 15px 30px;
-            background-color: #d32f2f; /* Changed to red to match the fire theme */
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
             font-weight: bold;
-            font-size: 18px;
-            transition: transform 0.2s, background 0.2s;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
         }
-        .btn:hover {
-            background-color: #b71c1c;
-            transform: scale(1.03); /* Slight pop animation on hover */
+        .link-section {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-left: 5px solid #d32f2f;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            word-wrap: break-word; /* Prevents the long url from breaking layouts */
         }
-        .btn-32 {
-            background-color: #e65100; /* Orange for the 32-bit to match fire theme */
+        .link-title {
+            font-weight: bold;
+            font-size: 16px;
+            color: #d32f2f;
+            margin-bottom: 5px;
         }
-        .btn-32:hover {
-            background-color: #bf360c;
+        .url-text {
+            display: block;
+            font-family: monospace;
+            background: #e0e0e0;
+            padding: 8px;
+            border-radius: 4px;
+            color: #0051b3;
+            text-decoration: underline;
+            font-size: 13px;
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -69,17 +74,27 @@
 
     <div class="container">
         <h1>Welcome</h1>
-        <p>Click a link below to download the Minecraft Apollon Client:</p>
+        <p class="intro-text">Here are your requested Minecraft Apollon Client direct links:</p>
         
-        <!-- 64-Bit Link -->
-        <a class="btn" href="https://mediafire.com" target="_blank">
-            Download 64-Bit APK
-        </a>
+        <!-- Link One Block -->
+        <div class="link-section">
+            <div class="link-title">Apollon Client 64-Bit Link:</div>
+            welcome link one 
+            <a class="url-text" href="https://mediafire.com" target="_blank">
+                https://mediafire.com
+            </a>
+            <strong>64bit</strong>
+        </div>
 
-        <!-- 32-Bit Link -->
-        <a class="btn btn-32" href="https://mediafire.com" target="_blank">
-            Download 32-Bit APK
-        </a>
+        <!-- Link Two Block -->
+        <div class="link-section" style="border-left-color: #e65100;">
+            <div class="link-title" style="color: #e65100;">Apollon Client 32-Bit Link:</div>
+            and 
+            <a class="url-text" href="https://mediafire.com" target="_blank" style="color: #bf360c;">
+                https://mediafire.com
+            </a>
+            <strong>32 bit</strong>
+        </div>
     </div>
 
 </body>
