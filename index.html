@@ -1,44 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proxy Hub</title>
-  <style>
-    body, html { margin: 0; padding: 0; height: 100%; font-family: 'Segoe UI', system-ui, sans-serif; background: #0d1117; color: #c9d1d9; display: flex; flex-direction: column; align-items: center; justify-content: center; }
-    .wrapper { text-align: center; max-width: 500px; width: 90%; padding: 30px; background: #161b22; border: 1px solid #30363d; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
-    h1 { color: #58a6ff; margin-bottom: 5px; font-size: 28px; }
-    p { color: #8b949e; margin-bottom: 25px; font-size: 14px; }
-    .btn { display: block; width: 100%; padding: 14px; margin: 12px 0; border: none; border-radius: 6px; font-size: 16px; font-weight: bold; cursor: pointer; transition: transform 0.2s, background 0.2s; text-decoration: none; box-sizing: border-box; }
-    .primary { background: #238636; color: #fff; }
-    .primary:hover { background: #2ea043; transform: translateY(-1px); }
-    .secondary { back  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 24px;
+            background-color: #0070f3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background-color: #0051b3;
+        }
+        .btn-32 {
+            background-color: #28a745;
+        }
+        .btn-32:hover {
+            background-color: #218838;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="wrapper">
-    <h1>Web Proxy Portal</h1>
-    <p>Bypass local network restrictions using external static web nodes.</p>
-    
-    <!-- Launches a completely independent web proxy node outside of your frame -->
-    <a href="https://bing.com" class="btn primary" id="proxyBtn" target="_top">Launch Unblocked Node</a>
-    
-    <!-- Fallback alternative if the main node gets blocked by your local network -->
-    <a href="https://duckduckgo.com" class="btn secondary" id="altBtn" target="_top">Alternative Gateway</a>
-    
-    <div class="footer">Hosted securely on distributed nodes. Target settings: _top isolation.</div>
-  </div>
+    <div class="container">
+        <h1>Welcome</h1>
+        <p>Please select the correct version for your device to download:</p>
+        
+        <!-- Link One: 64-Bit -->
+        <a class="btn" href="https://www.mediafire.com/file/xwro1zt5k7ncrt3/BM-MCPE_ApollonClient_1.26.13_64-Bit.apk/file" target="_blank">
+            Download 64-Bit APK
+        </a>
 
-  <script>
-    // Automatically handles and routes your URL out of the frame loop safely
-    const proxyGateways = [
-      "https://googleusercontent.com",
-      "https://allorigins.win"
-    ];
-    
-    document.getElementById('proxyBtn').href = proxyGateways[0];
-    document.getElementById('altBtn').href = proxyGateways[1];
-  </script>
+        <!-- Link Two: 32-Bit -->
+        <a class="btn btn-32" href="https://www.mediafire.com/file/w544ew3kzf9a27l/BM-MCPE_ApollonClient_1.26.13_32-Bit.apk/file" target="_blank">
+            Download 32-Bit APK
+        </a>
+    </div>
 
 </body>
 </html>
