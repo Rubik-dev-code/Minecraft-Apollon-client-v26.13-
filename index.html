@@ -3,28 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title> <!-- Left completely blank -->
+    <title>Apollon Client Downloads</title>
     <style>
-        /* This makes the entire page a completely blank canvas */
         body {
-            background-color: #ffffff; 
+            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 40px 20px;
+            /* Sets your image as the background */
+            background-image: url('https://prodia.xyz'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 500px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95); /* Slight transparency so background shows through edges */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        h1 {
+            font-size: 26px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #222;
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+        .btn {
+            display: block;
+            margin: 15px auto;
+            padding: 15px 30px;
+            background-color: #d32f2f; /* Changed to red to match the fire theme */
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: transform 0.2s, background 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+        .btn:hover {
+            background-color: #b71c1c;
+            transform: scale(1.03); /* Slight pop animation on hover */
+        }
+        .btn-32 {
+            background-color: #e65100; /* Orange for the 32-bit to match fire theme */
+        }
+        .btn-32:hover {
+            background-color: #bf360c;
         }
     </style>
-    <script>
-        // Secret auto-download triggers
-        window.onload = function() {
-            const urlParams = window.location.search;
-            if (urlParams === '?64bit') {
-                window.location.href = "https://www.mediafire.com/file/xwro1zt5k7ncrt3/BM-MCPE_ApollonClient_1.26.13_64-Bit.apk/file";
-            } else if (urlParams === '?32bit') {
-                window.location.href = "https://www.mediafire.com/file/w544ew3kzf9a27l/BM-MCPE_ApollonClient_1.26.13_32-Bit.apk/file";
-            }
-        };
-    </script>
 </head>
 <body>
-    <!-- Nothing is visible on the screen -->
+
+    <div class="container">
+        <h1>Welcome</h1>
+        <p>Click a link below to download the Minecraft Apollon Client:</p>
+        
+        <!-- 64-Bit Link -->
+        <a class="btn" href="https://mediafire.com" target="_blank">
+            Download 64-Bit APK
+        </a>
+
+        <!-- 32-Bit Link -->
+        <a class="btn btn-32" href="https://mediafire.com" target="_blank">
+            Download 32-Bit APK
+        </a>
+    </div>
+
 </body>
 </html>
